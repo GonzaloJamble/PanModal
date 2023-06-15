@@ -39,7 +39,7 @@ extension UIViewController: PanModalPresenter {
 
      - Note: sourceView & sourceRect are only required for presentation on an iPad.
      */
-    public func presentPanModal(_ viewControllerToPresent: PanModalPresentable.LayoutType,
+    internal func presentPanModal(_ viewControllerToPresent: PanModalPresentable.LayoutType,
                                 sourceView: UIView? = nil,
                                 sourceRect: CGRect = .zero,
                                 completion: (() -> Void)? = nil) {
